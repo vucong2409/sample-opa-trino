@@ -1,0 +1,27 @@
+{
+    "users": {
+        "john": {
+            "roles": ["schemata"]
+        },
+        "admin": {
+            "roles": ["admin"]
+        }, 
+        "test" : {
+            "roles": ["tables"]
+        }
+    },
+    "role_permissions": {
+        "schemata": [
+            {
+                "action": "read",
+                "table": "schemata"
+            }
+        ],
+        "tables": [
+            {
+                "action": "read",
+                "table": "tables"
+            }
+        ]
+    }
+}
