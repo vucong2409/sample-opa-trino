@@ -1,14 +1,5 @@
 {
     "users": {
-        "john": {
-            "roles": ["schemata"]
-        },
-        "admin": {
-            "roles": ["admin"]
-        }, 
-        "test" : {
-            "roles": ["tables"]
-        }
     },
     "role_permissions": {
         "schemata": [

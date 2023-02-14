@@ -15,12 +15,11 @@ allow {
 }
 
 user_is_admin {
-    some i
-    data.users[input.user].roles[i] == "admin"
+    data.users[input.user].role == "admin"
 }
 
 user_is_granted[permission] {
     some i, j
-    role := data.users[input.user].roles[i]
+    role := data.users[input.user].role
     permission := data.role_permissions[role][j]
 }
