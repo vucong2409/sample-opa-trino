@@ -19,7 +19,7 @@ user_is_admin {
 }
 
 user_is_granted[permission] {
-    some k
+    some m
     role := data.users[input.user].role
-    permission := data.role_permissions[role][k]
+    permission := data.role_permissions[role][m]
 }
